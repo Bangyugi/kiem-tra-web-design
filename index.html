@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <form action>
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2">Register Member</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Full name: </td>
+                        <td><input type="text" class="fullNameInput"></td>
+                        <td><div class="error fullNameError"></div></td>
+                    </tr>
+                    <tr>
+                        <td>Username: </td>
+                        <td><input type="text" class="usernameInput"></td>
+                        <td><div class="error usernameError"></div></td>
+                    </tr>
+                    <tr>
+                        <td>Email: </td>
+                        <td><input type="text" class="emailInput"></td>
+                        <td><div class="error emailError"></div></td>
+                    </tr>
+                    <tr>
+                        <td>Password: </td>
+                        <td><input type="password" class="passwordInput"></td>
+                        <td><div class="error passwordError"></div></td>
+                    </tr>
+                    <tr>
+                        <td>Confirm password: </td>
+                        <td><input type="password" class="rePasswordInput"></td>
+                        <td><div class="error rePasswordError"></div></td>
+                    </tr>
+                    <tr>
+                        <td>Interest: </td>
+                        <td><input type="text" list="my_list"
+                                class="interestInput">
+                            <datalist id="my_list">
+                                <option value="Football"></option>
+                                <option value="Badminton"></option>
+                                <option value="Tennis"></option>
+                                <option value="Volleyball"></option>
+
+                            </datalist></td>
+
+                    </tr>
+                    <tr>
+                        <td>Image: </td>
+                        <td><input type="file" accept="image/*"></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td></td>
+                        <td><button class="submitBtn">Submit</button></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </form>
+        <script src="script.js"></script>
+    </body>
+</html>
